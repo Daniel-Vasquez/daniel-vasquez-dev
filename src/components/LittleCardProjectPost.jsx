@@ -8,7 +8,7 @@ function LittleCardProjectPost({ projects }) {
       {projects.map(({ id, img, title, description, path, link }) => {
         return (
           <motion.div
-            className="cardProject-card"
+            className="cardProject-card dark:bg-white"
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
@@ -28,16 +28,16 @@ function LittleCardProjectPost({ projects }) {
                 </span>
               </div>
             </Link>
-            <div className="cardProject-info">
+            <div className="cardProject-info dark:border-black">
               <Link
-                className="cardProject-title"
+                className="cardProject-title dark:text-black"
                 to={ link }
                 target="_black"
                 title="Visitar"
               >
                 {title}
               </Link>
-              <div className="cardProject-description">
+              <div className="cardProject-description dark:text-black">
                 {description}
               </div>
               <div className="cardProject-links">

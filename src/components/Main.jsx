@@ -30,7 +30,7 @@ const Main = () => {
           img={personalImage}
         />
       </div>
-      <div className="main-container__description">
+      <div className="main-container__description dark:bg-white">
         <div className="typewriter">
           <h1 className="typewriter-text">
             Hola, soy{" "}

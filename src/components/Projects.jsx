@@ -9,13 +9,13 @@ function Projects() {
 
   return (
     <>
-      <div className="projects">
-        <div className="projects-options">
+      <div className="projects dark:bg-light">
+        <div className="projects-options dark:bg-light">
           <div className="generalContainer">
-            <h2 className="projects-options__title">Proyectos</h2>
+            <h2 className="projects-options__title font-semibold">Proyectos</h2>
           </div>
         </div>
-        <section className="projects-cards">
+        <section className="projects-cards dark:bg-light">
           <LittleCardProjectPost projects={ projects } />
         </section>
       </div>

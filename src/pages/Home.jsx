@@ -66,7 +66,7 @@ function Home() {
 
   return (
     <div className="home generalContainer">
-      <section className="sections-buttons">
+      <section className="sections-buttons dark:bg-white">
         <div className="buttons">
           <BtnShowSections
             title='Acerca de mi'
@@ -95,34 +95,36 @@ function Home() {
         </div>
       </section>
 
-      <section>
+      <section className="dark:bg-light">
         <HamburgerMenu references={REFERENCES} />
 
         {sections.showHome && (
           <>
-            <section className="mainContainer">
+            <section className="mainContainer dark:bg-light">
               <Main />
             </section>
 
             <section id="about-me" className="about-me">
               <div className="generalContainer">
                 <section className="personal-info">
-                  <p className="personal-info-title__text">Acerca de mi:</p>
-                  <p className="personal-info-paragraph">
-                    Soy un programador web con más de un año de experiencia
-                    en el emocionante mundo del desarrollo web. A lo largo de
-                    mi carrera, he adquirido una amplia gama de habilidades y
-                    conocimientos que me han permitido trabajar en diversos
-                    proyectos y desafíos tecnológicos.
-                  </p>
+                  <div className="mb-6">
+                    <p className="text-black text-3xl text-center font-semibold mb-5 sm:text-start">Acerca de mi:</p>
+                    <p className="personal-info-paragraph">
+                      Soy un programador web con más de un año de experiencia
+                      en el emocionante mundo del desarrollo web. A lo largo de
+                      mi carrera, he adquirido una amplia gama de habilidades y
+                      conocimientos que me han permitido trabajar en diversos
+                      proyectos y desafíos tecnológicos.
+                    </p>
 
-                  <p>
-                    Te comparto un resumen de mis habilidades y logros en
-                    las siguientes áreas:
-                  </p>
+                    <p>
+                      Te comparto un resumen de mis habilidades y logros en
+                      las siguientes áreas:
+                    </p>
+                  </div>
 
                   <div className="about-me-skills">
-                    <div className="about-me-skills__skill">
+                    <div className="about-me-skills__skill dark:bg-white">
                       <p className="about-me-skills__title">
                         <span>JavaScript</span>:
                       </p>
@@ -133,7 +135,7 @@ function Home() {
                       ofrecen una experiencia fluida a los usuarios.
                     </div>
 
-                    <div className="about-me-skills__skill">
+                    <div className="about-me-skills__skill dark:bg-white">
                       <p className="about-me-skills__title">
                         <span>Python</span>:
                       </p>
@@ -143,7 +145,7 @@ function Home() {
                       abordar proyectos desde diferentes perspectivas y
                       ofrecer soluciones eficientes.
                     </div>
-                    <div className="about-me-skills__skill">
+                    <div className="about-me-skills__skill dark:bg-white">
                       <p className="about-me-skills__title">
                         <span>React</span>:
                       </p>
@@ -153,7 +155,7 @@ function Home() {
                       modernas y escalables, brindando a los usuarios una
                       experiencia única e interactiva.
                     </div>
-                    <div className="about-me-skills__skill">
+                    <div className="about-me-skills__skill dark:bg-white">
                       <p className="about-me-skills__title">
                         <span>Node.js</span>:
                       </p>
@@ -165,7 +167,7 @@ function Home() {
                       http, net y process para una gestión eficiente de rutas
                       y procesos.
                     </div>
-                    <div className="about-me-skills__skill">
+                    <div className="about-me-skills__skill dark:bg-white">
                       <p className="about-me-skills__title">
                         <span>Express</span>:
                       </p>
@@ -187,7 +189,7 @@ function Home() {
         )}
 
         {sections.showProjects && (
-          <section id="all-projects" className="section-all-projects">
+          <section id="all-projects" className="section-all-projects dark:bg-light">
             <Projects />
           </section>
         )}
@@ -208,7 +210,7 @@ function Home() {
           </>
         )}
       </section>
-    </div>
+    </div >
   );
 }
 

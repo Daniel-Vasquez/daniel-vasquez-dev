@@ -1,8 +1,8 @@
 .headerContainer {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  height: 90px;
-  padding: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 20px;
   background-color: rgb(255, 255, 255, 0.60);
   background-color: black;
   color: white;
@@ -10,7 +10,6 @@
 }
 
 .headerContainer .headerContainer-title {
-  margin-left: 20px;
   display: flex;
   align-items: center;
 }
@@ -66,9 +65,8 @@
 
 @media screen and (max-width: 800px) {
   .headerContainer {
-    display: block;
+    flex-direction: column;
     text-align: center;
-    padding: 15px 0;
   }
 
   .headerContainer .headerContainer-title {

@@ -213,14 +213,6 @@
   opacity: 1;
 }
 
-.outstandingProjects-allProducts {
-  display: flex;
-  justify-content: end;
-  align-items: center;
-  height: 50px;
-  padding-right: 10px;
-}
-
 .projectDestacado-link {
   display: flex;
   flex-direction: column;
@@ -396,10 +388,6 @@
     margin-top: 5px;
     width: 95%;
     border-radius: 10px;
-  }
-
-  .outstandingProjects-allProducts {
-    justify-content: center;
   }
 }
 

@@ -13,7 +13,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  background-color: white;
+  background-color: black;
   border-radius: 30px;
   overflow: hidden;
   transition: all .3s;
@@ -35,8 +35,9 @@
 }
 
 .cardProject-img-sapn__img {
-  min-width: 100%;
-  max-height: 100%;
+  height: 100%;
+  width: 100%;
+  object-fit: fill;
 }
 
 .cardProject-info {
@@ -45,13 +46,14 @@
   justify-content: space-between;
   height: 100%;
   padding: 15px 15px 5px;
+  border-top: 1px solid white;
 }
 
 .cardProject-title {
   font-size: 24px;
   margin: 0;
   font-weight: 900;
-  color: black;
+  color: white;
   text-decoration: none;
 }
 
@@ -64,6 +66,7 @@
   font-weight: 900;
   margin: 10px 0;
   color: rgb(156, 163, 175, 1);
+  color: white;
 }
 
 .cardProject-description>ol {

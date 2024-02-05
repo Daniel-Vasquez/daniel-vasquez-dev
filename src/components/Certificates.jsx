@@ -1,48 +1,46 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import certificates from "../certificates";
-import "./styles/Certificates.css";
-import "./styles/Education-experience-info.css"
 
 const Certificates = () => {
   return (
-    <section className="personal-info">
-      <div className="personal-info-title-title">
-        <p className="personal-info-title__text">Certificaciones</p>
+    <section className="certificates mx-3">
+      <div>
+        <p className="text-black text-3xl text-center font-semibold mb-5 sm:text-start">
+          Certificaciones
+        </p>
       </div>
-      <div className="containerListCertificates">
+      <div
+        className="flex flex-col gap-5 max-h-80 rounded-xl p-5 border-2 dark:border-black"
+        style={{
+          overflowY: "scroll",
+          scrollbarColor: "#2463eb transparent",
+        }}
+      >
         {certificates.map((certificate, index) => {
           return (
-            <div className="listCertificates" key={index}>
+            <div className="flex flex-col items-center gap-3 sm:flex-row" key={index}>
               <div className="listCertificates-img">
                 <img
-                  className="listCertificates-img__img"
+                  className="w-9"
                   src={certificate.img}
                   alt={certificate.title}
                 />
               </div>
-              <div className="listCertificates-description">
+              <div>
                 <Link
-                  className="listCertificates-description__title"
-                  to={ certificate.link }
+                  className="font-semibold text-blue-600 hover:underline"
+                  to={certificate.link}
                   target="_blank"
                   title="Ver certificado"
                 >
                   {certificate.title}
                 </Link>
-                {/* <div>
-                  <p className="listCertificates-description__institution">
-                    {certificate.institution}
-                  </p>
-                  <p className="listCertificates-description__date">
-                    Expedición: {certificate.date}
-                  </p>
-                </div> */}
               </div>
             </div>
           );
         })}
-        <p className="moreCertificates">Entre otros</p>
+        <p className="font-semibold text-md opacity-50 text-center my-2">Entre otros</p>
       </div>
     </section>
   );

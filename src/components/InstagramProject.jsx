@@ -3,7 +3,7 @@ import './styles/InstagramProject.css'
 
 const InstagramProject = () => {
   return (
-    <div className="generalContainer instagramContainer">
+    <div className="generalContainer instagramContainer dark:bg-light">
       <h1 className="instagramContainer-title">
         Replica de Instagram (2020).
       </h1>

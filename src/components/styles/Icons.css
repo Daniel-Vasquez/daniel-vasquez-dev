@@ -3,7 +3,10 @@
   align-items: center;
   flex-wrap: wrap;
   margin-top: 35px;
+}
 
+.wrapper a {
+  width: 60px;
 }
 
 .wrapper .astro:hover .tooltip,
