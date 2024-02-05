@@ -1,41 +1,38 @@
 import React from "react";
 import education from "../education";
 import { Link } from "react-router-dom";
-import "./styles/Education.css";
-import './styles/Education-experience-info.css'
 
 const Education = () => {
   return (
     <>
       <section id="section-education" className="personal-info">
-        <div className="personal-info-title">
-          <p className="personal-info-title__text">Educación</p>
+        <div>
+          <p className="text-black text-3xl text-center font-semibold mb-5 sm:text-start">Educación</p>
         </div>
-        <div className="containerListEducation">
+        <div>
           {education.map((element, index) => {
             return (
-              <div className="listEducation" key={index}>
-                <div className="listEducation-img">
+              <div className="flex flex-col text-center items-center gap-3 p-2 border-b-2 border-black sm:flex-row sm:text-start dark:border-white" key={index}>
+                <div className="w-12">
                   <img
-                    className="listEducation-img__img"
+                    className="rounded-full"
                     src={element.logo}
                     alt={element.name}
                   />
                 </div>
-                <div className="listEducation-descrption">
-                  <h4 className="listEducation-descrption__name">
+                <div>
+                  <h4 className="text-blue-600 font-semibold mb-1">
                     <Link
-                      className="listEducation-descrption__link"
                       to={ element.link }
                       target="_blank"
                     >
                       {element.name}
                     </Link>
                   </h4>
-                  <p className="listEducation-descrption__title">
+                  <p className="mb-1">
                     {element.title}
                   </p>
-                  <p className="listEducation-descrption__date">
+                  <p className="mb-1">
                     {element.date}
                   </p>
                 </div>

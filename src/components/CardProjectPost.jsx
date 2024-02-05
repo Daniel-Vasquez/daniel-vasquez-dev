@@ -9,7 +9,7 @@ const CarouselImages = lazy(() => import("./CarouselImages"));
 function CardProjectPost({ project }) {
   const { title, description, technologies, link, codigo, images } = project
   return (
-    <section className="projectContainer">
+    <section className="projectContainer dark:bg-white">
       <div className="projectContainer-blogs">
         <Link
           className="projectContainer-blogs__title"
@@ -27,12 +27,12 @@ function CardProjectPost({ project }) {
         </div>
 
         <div className="projectContainer-info">
-          <h2 className="projectContainer-info__title">{title}</h2>
+          <h2 className="projectContainer-info__title font-bold">{title}</h2>
           <div className="projectContainer-info__paragraph">
             <div className="projectContainer-info__description">
               {description}
             </div>
-            <h3 className="projectContainer-info__span">Tecnologias:</h3>
+            <h3 className="projectContainer-info__span text-3xl font-semibold">Tecnologias:</h3>
             <Icons technologies={technologies} />
           </div>
           <div className="projectContainer-links">

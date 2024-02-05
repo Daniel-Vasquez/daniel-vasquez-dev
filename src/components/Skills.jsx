@@ -8,7 +8,7 @@ import "./styles/Education-experience-info.css";
 const Skills = () => {
   return (
     <div className="personal-info">
-      <h2 className="personal-info-title__text">Habilidades</h2>
+      <h2 className="text-black text-3xl text-center font-semibold mb-5 sm:text-start">Habilidades</h2>
       <div className="skills-container" id="skills">
         <WebDevContent
           title="Desarrollo"

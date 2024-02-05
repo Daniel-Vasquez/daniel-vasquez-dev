@@ -33,14 +33,14 @@ function Project() {
   }
 
   return (
-    <div>
+    <div className="bg-white dark:bg-light">
       <Suspense fallback={<Loading />}>
         <CardProjectPost project={project} />
       </Suspense>
       <div className="generalContainer">
         <div className="containerImages">
           <Suspense fallback={<Loading />}>
-            <div className="containerMobile">
+            <div className="containerMobile dark:border-black">
               <p className="containerMobile-title">Versión Mobile</p>
               <MobileCard
                 imageMobile={imageMobile}
@@ -48,7 +48,7 @@ function Project() {
                 link={link}
               />
             </div>
-            <div className="containerDesk">
+            <div className="containerDesk dark:border-black">
               <p className="containerDesk-title">Versión Desktop</p>
               <DeskCard
                 imageDesk={gif}
