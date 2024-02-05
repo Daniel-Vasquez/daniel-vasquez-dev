@@ -1,5 +1,3 @@
-import { useContext } from 'react';
-import { ProjectContext } from '../context/ProjectContext';
 import { Link } from "react-router-dom";
 import MobileCard from "../components/MobileCard.jsx";
 import './styles/TopProjects.css'

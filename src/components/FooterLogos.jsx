@@ -2,7 +2,6 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 const FooterLogos = ({ socialClassName, url, logo, name }) => {
-  console.log({url})
   return (
     <Link
       className={`icon ${socialClassName}`}

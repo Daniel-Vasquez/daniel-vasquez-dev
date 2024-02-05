@@ -1,5 +1,3 @@
-import { useContext } from 'react';
-import { ProjectContext } from '../context/ProjectContext';
 import LittleCardProjectPost from "./LittleCardProjectPost.jsx";
 import useScrollToTop from "../hooks/useScrollToTop.js";
 import "../components/styles/Projects.css";

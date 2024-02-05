@@ -7,9 +7,6 @@ import "../components/styles/Project.css";
 import "../components/styles/Btn.css"
 import { projects } from "../projects.json";
 
-console.log({ projects });
-
-
 const CardProjectPost = lazy(() => import("../components/CardProjectPost.jsx"));
 const DeskCard = lazy(() => import("../components/DeskCard.jsx"));
 
