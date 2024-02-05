@@ -1,0 +1,72 @@
+.listEducation {
+  display: flex;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 2px solid black;
+}
+
+.listEducation:last-child {
+  border-bottom: none;
+}
+
+.listEducation-img {
+  max-width: 48px;
+  width: 100%;
+}
+
+.listEducation-img__img {
+  width: 100%;
+  border-radius: 50%;
+}
+
+.listEducation-descrption {
+  display: inline-block;
+  margin-left: 10px;
+}
+
+.listEducation-descrption__name,
+.listEducation-descrption__title,
+.listEducation-descrption__date {
+  margin: 3px 0;
+}
+
+.listEducation-descrption__link {
+  text-decoration: none;
+  color: black;
+}
+
+.listEducation-descrption__link:hover {
+  color: #2666c2;
+  text-decoration: revert;
+}
+
+.listEducation-descrption__name {
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.listEducation-descrption__title {
+  font-size: 14px;
+}
+
+.listEducation-descrption__date {
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.619);
+}
+
+@media screen and (max-width: 500px) {
+  .containerEducation-title__text {
+    text-align: center;
+  }
+
+  .listEducation {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .listEducation-descrption {
+    margin-left: 0;
+  }
+
+}

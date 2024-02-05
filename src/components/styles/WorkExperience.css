@@ -1,0 +1,27 @@
+.containerListWords-info {
+  padding: 15px 0;
+  border-bottom: 1px solid black;
+}
+
+.containerListWords-info:last-child {
+  border-bottom: none;
+}
+
+
+.containerListWords-info__link {
+  text-decoration: none;
+  color: #206bd5;
+  font-weight: 500;
+  font-size: 16px;
+  margin-left: 5px;
+  cursor: pointer;
+  transition: all .3s;
+}
+
+.containerListWords-info__link:hover {
+  text-decoration: underline;
+}
+
+.containerListWords-info__text:nth-child(2n+1) {
+  background-color: #f1f1f1;
+}

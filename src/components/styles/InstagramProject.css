@@ -1,0 +1,102 @@
+.instagramContainer {
+  background-color: white;
+  padding: 60px 20px;
+}
+
+.instagramContainer-title {
+  text-align: center;
+  margin: 0px;
+  font-size: 32px;
+  letter-spacing: -.3px;
+  margin-bottom: 20px;
+}
+
+.instagram-container {
+  display: grid;
+  grid-template: auto / 2fr 1fr;
+  padding: 10px 0;
+  gap: 20px;
+}
+
+.instagram-container__link {
+  display: flex;
+  align-items: center;
+}
+
+.instagramContainer-img {
+  width: 100%;
+  min-height: 250px;
+  height: 100%;
+  border-radius: 20px;
+  border: 1px solid black;
+}
+
+.instagramContainer-description {
+  padding: 10px;
+  background-color: white;
+  border-radius: 20px;
+  border: 1px solid black;
+  padding: 15px;
+  box-shadow: 10px 10px 0 1px #000;
+}
+
+.instagram-container__title {
+  font-size: 45px;
+  margin: 0;
+}
+
+.instagramContainer-description__span {
+  font-weight: 600;
+  color: #4891f9;
+}
+
+.instagramContainer-ul {
+  padding-left: 20px;
+}
+
+.projectsContainer-buttons {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  gap: 10px;
+}
+
+.projectsContainer-buttons__visit,
+.projectsContainer-buttons__code {
+  color: #fff;
+  background-color: #555;
+  padding: 10px;
+  text-decoration: none;
+  border: 2px solid #555;
+  transition: all 0.3s;
+  border-radius: 5px;
+  font-weight: 900;
+}
+
+.projectsContainer-buttons__visit:hover,
+.projectsContainer-buttons__code:hover {
+  background-color: white;
+  color: black;
+}
+
+@media screen and (max-width: 950px) {
+  .instagram-container {
+    grid-template: auto auto / auto;
+    justify-content: center;
+    margin: 0 10px;
+  }
+
+  .instagramContainer-description {
+    box-shadow: none;
+  }
+
+  .projectsContainer-buttons {
+    justify-content: space-around;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .instagramContainer-title {
+    font-size: 22px;
+  }
+}

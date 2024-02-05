@@ -1,0 +1,33 @@
+.containerImages-desk {
+  width: 90%;
+  height: 350px;
+  border: 15px solid black;
+  position: relative;
+  margin: 0 auto;
+}
+
+.containerImages-desk__img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+@media screen and (max-width: 750px) {
+  .containerImages-desk {
+    width: 100%;
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .containerImages-desk {
+    height: 270px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .containerImages-desk {
+    border-width: 11px;
+    height: 195px;
+  }
+}

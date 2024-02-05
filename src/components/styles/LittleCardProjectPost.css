@@ -1,0 +1,121 @@
+.cardProject {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,
+      minmax(250px,
+        1fr));
+  gap: 30px;
+  padding: 20px 0;
+  justify-content: center;
+
+}
+
+.cardProject-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: white;
+  border-radius: 30px;
+  overflow: hidden;
+  transition: all .3s;
+  padding-bottom: 10px;
+  border: 1px solid black;
+}
+
+.cardProject-card:hover {
+  transform: translateY(-15px);
+  box-shadow: 0px 8px 5px 0px rgba(0, 0, 0, 0.75);
+
+}
+
+.cardProject-img {
+  position: relative;
+  width: 100%;
+  height: 170px;
+  border-bottom: 1px solid black;
+}
+
+.cardProject-img-sapn__img {
+  min-width: 100%;
+  max-height: 100%;
+}
+
+.cardProject-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  padding: 15px 15px 5px;
+}
+
+.cardProject-title {
+  font-size: 24px;
+  margin: 0;
+  font-weight: 900;
+  color: black;
+  text-decoration: none;
+}
+
+.cardProject-description {
+  width: 100%;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  font-size: 16px;
+  font-weight: 900;
+  margin: 10px 0;
+  color: rgb(156, 163, 175, 1);
+}
+
+.cardProject-description>ol {
+  padding-left: 17px;
+}
+
+.cardProject-links {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.cardProject-links-btn__details {
+  padding: 5px 10px;
+  border-radius: 5px;
+  background-color: #cffafe;
+  text-decoration: none;
+  color: #207490;
+  font-weight: 900;
+  transition: all .3s;
+  opacity: .7;
+}
+
+.cardProject-links-btn__visit {
+  padding: 5px 10px;
+  border-radius: 5px;
+  background-color: #dcfce7;
+  text-decoration: none;
+  color: #28803d;
+  font-weight: 900;
+  transition: all .3s;
+  opacity: .7;
+}
+
+.cardProject-links-btn__details:hover,
+.cardProject-links-btn__visit:hover {
+  opacity: 1;
+}
+
+@media screen and (max-width: 550px) {
+  .cardProject-card {
+    width: 300px;
+    margin: 0 auto;
+  }
+
+  .cardProject-title {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .cardsContainer {
+    max-width: 100%;
+  }
+}

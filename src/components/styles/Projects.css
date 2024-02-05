@@ -1,0 +1,21 @@
+.projects {
+  max-width: 1000px;
+  margin: 15px auto 30px;
+}
+
+.projects-options {
+  background-color: white;
+  padding: 10px 0;
+  text-align: center;
+}
+
+.projects-options__title {
+  color: black;
+  margin: 0;
+  font-size: 40px;
+}
+
+.projects-cards {
+  background-color: white;
+  padding: 0px 15px;
+}

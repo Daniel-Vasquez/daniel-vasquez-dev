@@ -1,0 +1,52 @@
+.buttons-btn {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background-color: #000;
+  background-image: none;
+  border: 1px solid #000;
+  border-radius: 4px;
+  box-shadow: #fff 4px 4px 0 0, #000 4px 4px 0 1px;
+  color: #fff;
+  padding: 10px 15px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  overflow: visible;
+  text-align: center;
+  text-transform: none;
+  touch-action: manipulation;
+  user-select: none;
+  -webkit-user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+  transition: all .3s;
+}
+
+.buttons-btn:focus {
+  text-decoration: none;
+}
+
+.buttons-btn:hover {
+  transform: scale(.93);
+}
+
+.buttons-btn:active {
+  box-shadow: rgba(0, 0, 0, .125) 0 3px 5px inset;
+  outline: 0;
+}
+
+.buttons-btn:not([disabled]):active {
+  box-shadow: #fff 2px 2px 0 0, #000 2px 2px 0 1px;
+  transform: translate(2px, 2px);
+}
+
+.buttons-btn:disabled {
+  opacity: .5;
+  cursor: no-drop;
+}
+
+.buttons-btn img {
+  filter: invert(1);
+}

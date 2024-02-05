@@ -1,0 +1,195 @@
+.containerPrincipalCard {
+  max-width: 1000px;
+  width: 100%;
+  border-radius: 20px;
+  overflow: hidden;
+  background: white;
+  overflow: hidden;
+  box-shadow: 0px 0px 5px 1px #00000063;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.navCard {
+  background: #fdfdfd;
+  padding: 5px 5px 0;
+  border-radius: 10px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  border-bottom: 1px solid #eeeeee;
+}
+
+.mainCard {
+  flex-grow: 1;
+}
+
+.ulCard,
+#liCard {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  height: 100%;
+}
+
+.ulCard {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  height: auto;
+  max-width: 1000px;
+  cursor: pointer;
+}
+
+#liCard {
+  border-radius: 5px;
+  position: relative;
+  background: white;
+  cursor: pointer;
+  width: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  margin: 0 auto;
+  text-align: center;
+  height: 50px;
+  font-size: 13px;
+}
+
+#liCard:hover {
+  background-color: #f0f0f0;
+}
+
+.underline {
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: #8855ff;
+}
+
+.liCard.selected {
+  background: #eee;
+}
+
+.liCard button {
+  width: 20px;
+  height: 20px;
+  border: 0;
+  background: #fff;
+  border-radius: 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  stroke: #000;
+  margin-left: 10px;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+.background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 300px;
+  background: #fff;
+}
+
+.add-project {
+  width: 30px;
+  height: 30px;
+  background: #eee;
+  border-radius: 50%;
+  border: 0;
+  cursor: pointer;
+  align-self: center;
+}
+
+.add-project:disabled {
+  opacity: 0.4;
+  cursor: default;
+  pointer-events: none;
+}
+
+.newCard {
+  width: 100%;
+  height: 500px;
+  overflow: hidden;
+  position: relative;
+  transition: all 0.3s;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.newCard-description {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  position: relative;
+}
+
+.cardDescription-buttons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 100px;
+  padding: 0 10px;
+  position: absolute;
+  bottom: 0;
+}
+
+.cardDescription-buttons__btn {
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: 1px solid #5a5a5afc;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: bold;
+  transition: all 0.3s;
+  text-decoration: none;
+  color: black;
+  background-color: #e6e9ed;
+  margin-right: 20px;
+}
+
+.cardDescription-buttons__btn:hover {
+  background-color: black;
+  color: white;
+}
+
+@media screen and (max-width: 1000px) {
+  .containerPrincipalCard {
+    margin: 0 10px;
+    width: auto;
+  }
+  .ulCard {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .newCard {
+    height: 400px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .newCard {
+    height: 300px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .newCard {
+    height: 250px;
+  }
+}

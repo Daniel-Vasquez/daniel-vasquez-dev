@@ -1,0 +1,83 @@
+.containerListCertificates {
+  overflow-y: scroll;
+  max-height: 310px;
+  box-shadow: 0px 0px 3px 0px black;
+  border-radius: 15px;
+  padding: 20px;
+}
+
+.listCertificates {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  gap: 10px;
+}
+
+.listCertificates-img__img {
+  width: 35px;
+}
+
+.listCertificates-description {
+  margin-left: 10px;
+}
+
+.listCertificates-description__title {
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.listCertificates-description__title:hover {
+  color: #2666c2;
+  text-decoration: revert;
+}
+
+.listCertificates-description__institution {
+  margin: 7px 0;
+}
+
+.listCertificates-description__date {
+  font-size: 14px;
+  margin: 7px 0;
+  color: rgba(0, 0, 0, 0.619);
+}
+
+.moreCertificates {
+  opacity: 0.5;
+  font-size: 14px;
+  text-align: center;
+  margin: 5px 0;
+}
+
+@media screen and (max-width: 720px) {
+  .containercCertificates {
+    box-shadow: none;
+    height: 400px;
+
+  }
+
+  .containerListCertificates {
+    padding: 15px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .listCertificates {
+    flex-direction: column;
+  }
+
+  .listCertificates-img {
+    margin: 7px auto;
+  }
+
+  .listCertificates-description {
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .containercCertificates-title__text {
+    text-align: center;
+  }
+}
