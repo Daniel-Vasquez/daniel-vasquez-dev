@@ -28,7 +28,7 @@ function Navbar() {
           </li>
           <li>
             <Link
-              className="text-white font-bold text-lg hover:text-blue-500 dark:text-black dark:hover:text-blue-500 sm_text-2xl"
+              className="text-white font-bold text-lg hover:text-blue-500 dark:text-black dark:hover:text-blue-500 sm:text-2xl"
               to="/proyectos"
             >
               Proyectos
