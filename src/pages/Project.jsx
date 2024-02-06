@@ -1,4 +1,5 @@
 import { Suspense, lazy } from "react";
+import { Link } from 'react-router-dom'
 import { useParams } from "react-router-dom";
 import { Loading } from '../components/Loading';
 import MobileCard from '../components/MobileCard.jsx';
@@ -61,8 +62,12 @@ function Project() {
       </div>
       <div className="containerButton">
         <div>
-          <a className="btn white bg-light" href="/proyectos">Volver a proyectos</a>
-          {/* <a className="btn white" href="/">Volver</a> */}
+          <Link 
+            className="btn white bg-light" 
+            to="/proyectos"
+          >
+            Volver a proyectos
+          </Link>
         </div>
       </div>
     </div>
