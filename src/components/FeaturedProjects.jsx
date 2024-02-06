@@ -21,7 +21,7 @@ const FeaturedProjects = ({ proyects }) => {
               <div className="outstandingProjects-btn">
                 <Link
                   className="outstandingProjects-btn__details"
-                  to={`/project/${project.path}`}
+                  to={`/proyecto/${project.path}`}
                   title="Ver detalles del proycto"
                 >
                   Detalles

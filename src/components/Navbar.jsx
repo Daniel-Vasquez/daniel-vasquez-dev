@@ -11,27 +11,29 @@ function Navbar() {
   });
 
   const handleDarkMode = () => {
-    console.log("click")
     setDarkMode(!darkMode())
   }
 
   const { pathname } = useLocation();
 
   return (
-    <header className="headerContainer bg-black dark:bg-white">
+    <header className="headerContainer fixed top-0 right-0 left-0 z-50 bg-black dark:bg-white">
       <section className="headerContainer-title text-2xl font-bold">
-        {pathname.includes('/project/')
-          ? (
-            <a className="headerContainer-title__link dark:text-black" href="/">
-              Inicio
-            </a>
-          )
-          : (
-            <h1 className="text-white dark:text-black" style={{ margin: '0' }}>
-              Daniel Vasquez
-            </h1>
-          )
-        }
+        {pathname.includes('/proyecto/') && (
+          <a className="headerContainer-title__link text-lg dark:text-black" href="/proyectos">
+            Volver a proyectos
+          </a>
+        )}
+        {pathname.includes('/proyectos') && (
+          <a href="/" className="text-white dark:text-black" style={{ margin: '0' }}>
+            Inicio
+          </a>
+        )}
+        {pathname === '/' && (
+          <h1 className="text-white dark:text-black" style={{ margin: '0' }}>
+            Daniel Vasquez
+          </h1>
+        )}
       </section>
       <section className="headerContainer-link">
         <Link

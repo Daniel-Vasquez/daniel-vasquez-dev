@@ -100,7 +100,7 @@ function Home() {
 
         {sections.showHome && (
           <>
-            <section className="mainContainer dark:bg-light">
+            <section className="mainContainer mt-20 dark:bg-light">
               <Main />
             </section>
 
@@ -196,7 +196,7 @@ function Home() {
 
         {sections.showProjectInsta && (
           <>
-            <section className="section-InstagramProject">
+            <section className="section-InstagramProject mt-20">
               <InstagramProject />
             </section>
           </>
@@ -204,7 +204,7 @@ function Home() {
 
         {sections.showFeaturedProjects && (
           <>
-            <section id="featured-projects" className="section-TopProjects">
+            <section id="featured-projects" className="section-TopProjects mt-20">
               <TopProjects />
             </section>
           </>
