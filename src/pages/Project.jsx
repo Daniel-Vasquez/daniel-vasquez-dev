@@ -66,7 +66,7 @@ function Project() {
             className="btn white bg-light" 
             to="/proyectos"
           >
-            Volver a proyectos
+            Proyectos
           </Link>
         </div>
       </div>
