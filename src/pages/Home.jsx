@@ -96,7 +96,7 @@ function Home() {
       </section>
 
       <section className="dark:bg-light">
-        <HamburgerMenu references={REFERENCES} />
+        {/* <HamburgerMenu references={REFERENCES} /> */}
 
         {sections.showHome && (
           <>

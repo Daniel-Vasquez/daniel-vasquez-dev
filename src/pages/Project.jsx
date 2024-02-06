@@ -33,7 +33,7 @@ function Project() {
   }
 
   return (
-    <div className="bg-white mt-[70px] dark:bg-light">
+    <div className="bg-white mt-16 dark:bg-light">
       <Suspense fallback={<Loading />}>
         <CardProjectPost project={project} />
       </Suspense>
