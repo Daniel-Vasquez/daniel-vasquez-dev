@@ -43,7 +43,7 @@ function LittleCardProjectPost({ projects }) {
               <div className="cardProject-links">
                 <Link
                   className="cardProject-links-btn__details"
-                  to={`/project/${path}`}
+                  to={`/proyecto/${path}`}
                   title="Ver detalles del proycto"
                 >
                   Detalles

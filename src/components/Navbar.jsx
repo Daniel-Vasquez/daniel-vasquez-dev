@@ -1,7 +1,7 @@
 import { createSignal, createEffect } from "solid-js";
-import { Link, useLocation } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { Toggle } from "./Togggle";
-import "./styles/Navbar.css";
+import { DropdownMenu } from "./DropdownMenu"
 
 function Navbar() {
   const [darkMode, setDarkMode] = createSignal(false);
@@ -11,44 +11,53 @@ function Navbar() {
   });
 
   const handleDarkMode = () => {
-    console.log("click")
     setDarkMode(!darkMode())
   }
 
-  const { pathname } = useLocation();
-
   return (
-    <header className="headerContainer bg-black dark:bg-white">
-      <section className="headerContainer-title text-2xl font-bold">
-        {pathname.includes('/project/')
-          ? (
-            <a className="headerContainer-title__link dark:text-black" href="/">
+    <header className="flex justify-between p-4 fixed top-0 right-0 left-0 z-50 bg-black dark:bg-white">
+      <nav className="hidden md:block">
+        <ul className="flex gap-4">
+          <li>
+            <Link
+              className="text-white font-bold text-xl hover:text-blue-500 dark:text-black dark:hover:text-blue-500"
+              to="/"
+            >
               Inicio
-            </a>
-          )
-          : (
-            <h1 className="text-white dark:text-black" style={{ margin: '0' }}>
-              Daniel Vasquez
-            </h1>
-          )
-        }
+            </Link>
+          </li>
+          <li>
+            <Link
+              className="text-white font-bold text-xl hover:text-blue-500 dark:text-black dark:hover:text-blue-500"
+              to="/proyectos"
+            >
+              Proyectos
+            </Link>
+          </li>
+        </ul>
+      </nav>
+
+      <section className="rounded-lg  block md:hidden">
+        <DropdownMenu />
       </section>
-      <section className="headerContainer-link">
+      <div className="hidden gap-4 sm:flex">
         <Link
-          className="headerContainer-link__github dark:text-black"
+          className="text-white font-bold text-xl hover:text-blue-500 dark:text-black dark:hover:text-blue-500"
           to="https://github.com/Daniel-Vasquez"
           target="_blank"
         >
           Github
         </Link>
+
         <Link
-          className="headerContainer-link__perfil dark:text-black"
+          className="text-white font-bold text-xl hover:text-blue-500 dark:text-black dark:hover:text-blue-500"
           to="https://www.linkedin.com/in/daniel-vasquez-nepomuceno/"
           target="_blank"
         >
           Linkedin
         </Link>
-      </section>
+
+      </div>
       <Toggle
         handleDarkMode={handleDarkMode}
       />

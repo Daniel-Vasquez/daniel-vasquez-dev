@@ -13,7 +13,6 @@ import instaIcon from "../images/insta-icon.png"
 import featuredIcon from "../images/featured-icon.png"
 import { BtnShowSections } from "../components/BtnShowSections";
 import { TopProjects } from "../components/TopProjects";
-import { HamburgerMenu } from "../components/HamburgerMenu";
 import '../components/styles/Home.css'
 
 function Home() {
@@ -34,33 +33,6 @@ function Home() {
       ...Object.fromEntries(Object.keys(sections).map((key) => [key, key === sectionName])),
     });
   };
-
-  const REFERENCES = [
-    {
-      title: 'Acerca de mi',
-      icon: meIcon,
-      nameSection: "showHome",
-      handleSectionClick: handleSectionClick
-    },
-    {
-      title: 'Proyectos',
-      icon: projectsIcon,
-      nameSection: "showProjects",
-      handleSectionClick: handleSectionClick
-    },
-    {
-      title: 'Replica de Instagram',
-      icon: instaIcon,
-      nameSection: "showProjectInsta",
-      handleSectionClick: handleSectionClick
-    },
-    {
-      title: 'Proyectos destacados',
-      icon: featuredIcon,
-      nameSection: "showFeaturedProjects",
-      handleSectionClick: handleSectionClick,
-    }
-  ]
 
   useScrollToTop()
 
@@ -96,11 +68,9 @@ function Home() {
       </section>
 
       <section className="dark:bg-light">
-        <HamburgerMenu references={REFERENCES} />
-
         {sections.showHome && (
           <>
-            <section className="mainContainer dark:bg-light">
+            <section className="mainContainer mt-20 dark:bg-light">
               <Main />
             </section>
 
@@ -196,7 +166,7 @@ function Home() {
 
         {sections.showProjectInsta && (
           <>
-            <section className="section-InstagramProject">
+            <section className="section-InstagramProject mt-20">
               <InstagramProject />
             </section>
           </>
@@ -204,7 +174,7 @@ function Home() {
 
         {sections.showFeaturedProjects && (
           <>
-            <section id="featured-projects" className="section-TopProjects">
+            <section id="featured-projects" className="section-TopProjects mt-20">
               <TopProjects />
             </section>
           </>

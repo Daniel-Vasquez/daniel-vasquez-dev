@@ -33,7 +33,7 @@ function Project() {
   }
 
   return (
-    <div className="bg-white dark:bg-light">
+    <div className="bg-white mt-16 dark:bg-light">
       <Suspense fallback={<Loading />}>
         <CardProjectPost project={project} />
       </Suspense>
@@ -61,7 +61,8 @@ function Project() {
       </div>
       <div className="containerButton">
         <div>
-          <a className="btn white" href="/">Volver</a>
+          <a className="btn white bg-light" href="/proyectos">Volver a proyectos</a>
+          {/* <a className="btn white" href="/">Volver</a> */}
         </div>
       </div>
     </div>

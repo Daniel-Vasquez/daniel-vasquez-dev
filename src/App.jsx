@@ -1,7 +1,8 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import LayoutNavbar from "./components/LayoutNavbar.jsx";
-import Home from "./pages/Home.jsx";
-import Project from "./pages/Project.jsx";
+import Home from "./pages/Home";
+import Project from "./pages/Project";
+import { PageProjects } from "./pages/Projects";
 import './App.css';
 
 function App() {
@@ -10,7 +11,8 @@ function App() {
       <LayoutNavbar>
         <Routes>
           <Route path="/" element={<Home/>} />
-          <Route path="/project/:nameProject" element={<Project />} />
+          <Route path="/proyecto/:nameProject" element={<Project />} />
+          <Route path="/proyectos" element={<PageProjects />} />
         </Routes>
       </LayoutNavbar>
     </Router>

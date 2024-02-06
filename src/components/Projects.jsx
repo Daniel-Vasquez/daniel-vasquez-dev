@@ -9,7 +9,7 @@ function Projects() {
 
   return (
     <>
-      <div className="projects dark:bg-light">
+      <div className="projects mt-20 dark:bg-light">
         <div className="projects-options dark:bg-light">
           <div className="generalContainer">
             <h2 className="projects-options__title font-semibold">Proyectos</h2>

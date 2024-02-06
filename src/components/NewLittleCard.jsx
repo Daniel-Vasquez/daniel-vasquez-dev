@@ -21,7 +21,7 @@ export default function NewLittleCard() {
           <div className="cardDescription-buttons">
             <Link
               className="cardDescription-buttons__btn"
-              to={`/project/${selectedTab.path}`}
+              to={`/proyecto/${selectedTab.path}`}
               title="Ver detalles del proycto"
             >
               Detalles
