@@ -16,11 +16,11 @@ function Navbar() {
 
   return (
     <header className="flex justify-between items-center p-4 fixed top-0 right-0 left-0 z-50 bg-black dark:bg-white">
-      <nav>
+      <nav className="hidden md:block">
         <ul className="flex gap-3">
           <li>
             <Link
-              className="text-white font-bold text-lg hover:text-blue-500 dark:text-black dark:hover:text-blue-500 sm:text-2xl"
+              className="text-white font-bold text-lg border-r-2 border-gray-400 pr-2 hover:text-blue-500 dark:text-black dark:hover:text-blue-500 sm:text-2xl"
               to="/"
             >
               Inicio
@@ -28,7 +28,7 @@ function Navbar() {
           </li>
           <li>
             <Link
-              className="text-white font-bold text-lg hover:text-blue-500 dark:text-black dark:hover:text-blue-500 sm:text-2xl"
+              className="text-white font-bold text-lg border-r-2 border-gray-400 pr-2 hover:text-blue-500 dark:text-black dark:hover:text-blue-500 sm:text-2xl"
               to="/proyectos"
             >
               Proyectos
@@ -37,9 +37,9 @@ function Navbar() {
         </ul>
       </nav>
 
-      {/* <section className="rounded-lg  block md:hidden">
+      <section className="rounded-lg  block md:hidden">
         <DropdownMenu />
-      </section> */}
+      </section>
       <div className="hidden gap-4 sm:flex">
         <Link
           className="text-white font-bold text-xl hover:text-blue-500 dark:text-black dark:hover:text-blue-500"
@@ -56,7 +56,6 @@ function Navbar() {
         >
           Linkedin
         </Link>
-
       </div>
       <Toggle
         handleDarkMode={handleDarkMode}
