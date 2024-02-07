@@ -28,7 +28,7 @@ function LittleCardProjectPost({ projects }) {
                 </span>
               </div>
             </Link>
-            <div className="cardProject-info dark:border-black">
+            <div className="cardProject-info bg-blue-light dark:border-black dark:bg-white">
               <Link
                 className="cardProject-title dark:text-black"
                 to={ link }

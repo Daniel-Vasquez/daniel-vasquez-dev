@@ -8,7 +8,7 @@ export const Technologies = () => {
         return (
           <div
             key={index}
-            className="flex flex-col gap-2 p-6 bg-gray-800 border border-gray-200 rounded-lg shadow cursor-pointer dark:bg-white hover:bg-gray-700 hover:border-gray-300 hover:shadow-lg dark:border-gray-700"
+            className="bg-blue-light flex flex-col gap-2 p-6 border-2 border-black rounded-lg shadow cursor-pointer dark:bg-white hover:bg-blue hover:border-gray-300 hover:shadow-lg dark:border-gray-700"
           >
             <h5 className="text-2xl font-bold tracking-tight text-white dark:text-gray-900">
               {name}

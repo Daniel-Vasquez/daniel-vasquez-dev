@@ -38,7 +38,7 @@ function Home() {
   useScrollToTop()
 
   return (
-    <div className="home generalContainer">
+    <div className="home pt-4 bg-blue-medium">
       <section className="hidden pl-2 pr-4 bg-black md:block dark:bg-white">
         <div className="flex flex-col gap-4 sticky top-1/4">
           <BtnShowSections
@@ -71,16 +71,16 @@ function Home() {
       <section className="dark:bg-light">
         {sections.showHome && (
           <>
-            <section className="container flex items-center m-auto p-4 bg-white min-h-96 mt-20 w-full dark:bg-light">
+            <section className="container bg-blue-medium flex items-center m-auto p-4 min-h-96 pt-20 w-full dark:bg-light">
               <Main />
             </section>
 
             <section id="about-me" className="max-w-5xl w-full m-auto p-2 pb-8">
-              <div className="generalContainer">
+              <div>
                 <section className="personal-info">
                   <div className="mb-6">
-                    <p className="text-black text-3xl text-center font-semibold mb-5 sm:text-start">Acerca de mi:</p>
-                    <p className="personal-info-paragraph">
+                    <p className="text-white text-3xl text-center font-semibold mb-5 sm:text-start dark:text-black">Acerca de mi:</p>
+                    <p className="leading-relaxed text-white mb-2 dark:text-black">
                       Soy un programador web con más de un año de experiencia
                       en el emocionante mundo del desarrollo web. A lo largo de
                       mi carrera, he adquirido una amplia gama de habilidades y
@@ -88,7 +88,7 @@ function Home() {
                       proyectos y desafíos tecnológicos.
                     </p>
 
-                    <p>
+                    <p className="leading-relaxed text-white mb-2 dark:text-black">
                       Te comparto un resumen de mis habilidades y logros en
                       las siguientes áreas:
                     </p>
@@ -109,14 +109,14 @@ function Home() {
         )}
 
         {sections.showProjects && (
-          <section id="all-projects" className="dark:bg-light">
+          <section id="all-projects" className="pt-20 bg-blue dark:bg-light">
             <Projects />
           </section>
         )}
 
         {sections.showProjectInsta && (
           <>
-            <section className="max-w-5xl w-full m-auto mt-20" style={{minHeight: "800px"}}>
+            <section className="max-w-5xl w-full m-auto pt-20" style={{minHeight: "800px"}}>
               <InstagramProject />
             </section>
           </>
@@ -124,7 +124,7 @@ function Home() {
 
         {sections.showFeaturedProjects && (
           <>
-            <section id="featured-projects" className="max-w-5xl w-full m-auto mt-20" style={{minHeight: "800px"}}>
+            <section id="featured-projects" className="max-w-5xl w-full m-auto pt-20" style={{minHeight: "800px"}}>
               <TopProjects />
             </section>
           </>

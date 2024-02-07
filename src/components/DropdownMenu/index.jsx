@@ -21,8 +21,8 @@ export function DropdownMenu() {
   return (
     <div>
       <Menu as="div" className="relative inline-block text-left">
-        <Menu.Button className="p-2 hover:bg-blue">
-          <IconMenu className="text-white w-8 h-8 hover:text-blue-600 dark:text-black dark:hover:text-blue-600" />
+        <Menu.Button className="p-2 rounded-md hover:bg-blue-light dark:hover:bg-light">
+          <IconMenu className="text-white w-8 h-8 dark:text-black" />
         </Menu.Button>
 
         <Transition
@@ -34,13 +34,13 @@ export function DropdownMenu() {
           leaveFrom="transform opacity-100 scale-100"
           leaveTo="transform opacity-0 scale-95"
         >
-          <Menu.Items className="absolute top-12 left-2 w-44 focus:outline-none">
-            <div className="bg-black flex flex-col gap-3 px-4 py-7 rounded-md border-2 border-border dark:bg-light dark:border-black">
+          <Menu.Items className="absolute top-14 w-44 focus:outline-none">
+            <div className="bg-blue flex flex-col gap-3 px-4 py-7 rounded-xl border-2 border-white dark:bg-light dark:border-black">
               {ROUTES.map(({ href, label }, index) => (
                 <Menu.Item key={index}>
                   <Link
                     to={href}
-                    className="bg-blue-medium text-white rounded-md px-3 py-2 font-bold hover:bg-golden hover:text-gray-700 dark:text-black dark:hover:text-white"
+                    className="bg-white text-black rounded-md px-3 py-2 font-bold hover:text-gray-500 dark:text-black dark:hover:text-gray-500"
                   >
                     {label}
                   </Link>
@@ -52,7 +52,7 @@ export function DropdownMenu() {
                     href={href}
                     target="_blank"
                     rel="noreferrer"
-                    className="bg-blue-medium text-white rounded-md px-3 py-2 font-bold hover:bg-golden hover:text-gray-700 dark:text-black dark:hover:text-white"
+                    className="bg-white text-black rounded-md px-3 py-2 font-bold hover:text-gray-500 dark:text-black dark:hover:text-gray-500"
                   >
                     {label}
                   </a>

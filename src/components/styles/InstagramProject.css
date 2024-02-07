@@ -1,15 +1,8 @@
 .instagramContainer {
-  background-color: white;
   padding: 60px 20px;
 }
 
-.instagramContainer-title {
-  text-align: center;
-  margin: 0px;
-  font-size: 32px;
-  letter-spacing: -.3px;
-  margin-bottom: 20px;
-}
+
 
 .instagram-container {
   display: grid;
@@ -52,6 +45,7 @@
 
 .instagramContainer-ul {
   padding-left: 20px;
+  margin-bottom: 15px;
 }
 
 .projectsContainer-buttons {
@@ -92,11 +86,5 @@
 
   .projectsContainer-buttons {
     justify-content: space-around;
-  }
-}
-
-@media screen and (max-width: 500px) {
-  .instagramContainer-title {
-    font-size: 22px;
   }
 }

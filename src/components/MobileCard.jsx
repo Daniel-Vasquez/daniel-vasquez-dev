@@ -15,7 +15,7 @@ function MobileCard({ imageMobile, title, link }) {
         alt={title}
         loading="lazy"
       />
-      <div className="cicleMobile"></div>
+      <div className="cicle"></div>
     </Link>
   );
 }

@@ -1,11 +1,11 @@
-import {Link} from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import './styles/InstagramProject.css'
 
 const InstagramProject = () => {
   return (
-    <div className="generalContainer instagramContainer dark:bg-light">
-      <h1 className="instagramContainer-title">
-        Replica de Instagram (2020).
+    <div className="instagramContainer dark:bg-light">
+      <h1 className="text-4xl text-center py-3 text-white font-extrabold dark:text-black">
+        Replica de Instagram (2020)
       </h1>
 
       <div className="instagram-container">
@@ -21,9 +21,7 @@ const InstagramProject = () => {
             alt="Instagram"
           />
         </Link>
-        <div
-          className="instagramContainer-description"
-        >
+        <div className="instagramContainer-description">
           <h1 className="instagram-container__title">Instagram</h1>
           <p className="instagramContainer-description__paragraph">
             Mi proyecto está hecho con{" "}
@@ -32,7 +30,12 @@ const InstagramProject = () => {
             </span>{" "}
             y cuenta con:
           </p>
-          <ul className="instagramContainer-ul">
+          <ul
+            className="instagramContainer-ul"
+            style={{
+              listStyleType: "square",
+            }}
+          >
             <li>Manejo de estado.</li>
             <li>User Interface.</li>
             <li>Manejo de single page apps.</li>

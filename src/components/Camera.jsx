@@ -12,7 +12,7 @@ const Camera = () => {
   }
 
   return (
-    <div id="generalContainerToggle" className="generalContainer">
+    <div id="generalContainerToggle" className="">
       <div id="cameraContainer">
         <div className="strip"></div>
         <div className="lens"></div>
