@@ -1,40 +1,52 @@
-import React from "react";
-import WebDevContent from "./componentsSkills/WebDevContent.jsx";
-import LayoutContent from "./componentsSkills/LayoutContent.jsx";
-import "./styles/Skills.css";
-import "./styles/Education-experience-info.css";
+import { SkillFulness } from "./SkillFulness";
 
+const ITEMSDEV = [
+  "Astro",
+  "React",
+  "Node.js",
+  "Express",
+  "Python",
+  "AWS (S3, Cloudwatch)",
+  "Selenium",
+  "Git",
+  "JavaScript",
+]
+
+const TOOLSDEV = [
+  "VSCode",
+  "GitHub",
+]
+
+const ITEMSLAYOUT = [
+  "Tailwind CSS",
+  "CSS3",
+  "CSS Grid",
+  "Flexbox",
+]
+
+const TOOLSLAYOUT = [
+  "Figma (Conceptos básicos)",
+]
 
 const Skills = () => {
   return (
-    <div className="personal-info">
+    <div className=" p-3 my-3">
       <h2 className="text-black text-3xl text-center font-semibold mb-5 sm:text-start">Habilidades</h2>
-      <div className="skills-container" id="skills">
-        <WebDevContent
-          title="Desarrollo"
-          titleTechnologies="Tecnologías"
-          item="JavaScript"
-          item2="React"
-          item3="Node.js"
-          item4="Git"
-          item5="Python"
-          item6="AWS (S3, Cloudwatch)"
-          item7="Selenium"
-          item8="Express"
-          titleTools="Herramientas"
-          tool="VSCode"
-          tool2="GitHub"
-        />
-        <LayoutContent
-          title="Maquetación web"
-          titleTechnologies="Tecnologías"
-          item="HTML5"
-          item2="CSS3"
-          item3="CSS Grid"
-          item4="Flexbox"
-          titleTools="Herramientas"
-          tool="Figma (Conceptos básicos)"
-        />
+      <div className="flex justify-evenly flex-wrap gap-7" id="skills">
+        <div className="max-w-72 w-full rounded-3xl border-2 border-black bg-gray-800 text-white dark:bg-white dark:text-black">
+          <SkillFulness
+            title="Desarrollo"
+            items={ITEMSDEV}
+            tools={TOOLSDEV}
+          />
+        </div>
+        <div className="max-w-72 w-full rounded-3xl border-2 border-black bg-gray-800 text-white dark:bg-white dark:text-black">
+          <SkillFulness
+            title="Maquetación web"
+            items={ITEMSLAYOUT}
+            tools={TOOLSLAYOUT}
+          />
+        </div>
       </div>
     </div>
   );

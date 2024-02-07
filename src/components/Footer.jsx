@@ -8,10 +8,10 @@ import "./styles/Footer.css";
 
 const Footer = () => {
   return (
-    <div className="footer">
-      <div className="footer-info">
-        <div className="contactsContainer">
-          <ul className="wrapper">
+    <div className="py-10 bg-gray-700 dark:bg-white">
+      <div className="flex flex-col justify-evenly items-center w-full">
+        <div>
+          <ul className="wrapper flex flex-wrap justify-center list-none">
             <FooterLogos
               socialClassName="gitHub"
               url="https://github.com/Daniel-Vasquez"
@@ -38,9 +38,13 @@ const Footer = () => {
             />
           </ul>
         </div>
-        <div className="footer-name">
-          <h1 className="footer-name__name">Daniel Vasquez</h1>
-          <p className="footer-name__text">Desarrollador Frontend</p>
+        <div className="text-center">
+          <h1 className="text-3xl font-bold text-white mb-3 dark:text-black">
+            Daniel Vasquez
+          </h1>
+          <p className="opacity-50 text-lg text-white font-medium dark:text-black">
+            Desarrollador Frontend
+          </p>
         </div>
       </div>
     </div>

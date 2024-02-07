@@ -21,7 +21,7 @@ const Education = () => {
                   />
                 </div>
                 <div>
-                  <h4 className="text-blue-600 font-semibold mb-1">
+                  <h4 className="text-blue-600 font-semibold mb-1 underline">
                     <Link
                       to={ element.link }
                       target="_blank"

@@ -7,7 +7,7 @@ const WorkExperience = () => {
     <>
       <section
         id="work-experience"
-        className="bg-white my-7 mx-2 p-4 rounded-xl"
+        className="bg-white my-7 p-2 rounded-xl"
       >
         <div className="personal-info-title">
           <p className="text-black text-3xl text-center font-semibold mb-5 sm:text-start">Experiencia</p>

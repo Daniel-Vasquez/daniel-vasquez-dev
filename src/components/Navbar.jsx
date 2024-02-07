@@ -15,7 +15,7 @@ function Navbar() {
   }
 
   return (
-    <header className="flex justify-between items-center p-4 fixed top-0 right-0 left-0 z-50 bg-black dark:bg-white">
+    <header className="bg-black flex justify-between items-center p-4 fixed top-0 right-0 left-0 z-50 border-b-2 border-black dark:bg-white">
       <nav className="hidden md:block">
         <ul className="flex gap-3">
           <li>

@@ -13,6 +13,7 @@ import instaIcon from "../images/insta-icon.png"
 import featuredIcon from "../images/featured-icon.png"
 import { BtnShowSections } from "../components/BtnShowSections";
 import { TopProjects } from "../components/TopProjects";
+import { Technologies } from "../components/Technologies";
 import '../components/styles/Home.css'
 
 function Home() {
@@ -38,8 +39,8 @@ function Home() {
 
   return (
     <div className="home generalContainer">
-      <section className="sections-buttons dark:bg-white">
-        <div className="buttons">
+      <section className="hidden pl-2 pr-4 bg-black md:block dark:bg-white">
+        <div className="flex flex-col gap-4 sticky top-1/4">
           <BtnShowSections
             title='Acerca de mi'
             icon={meIcon}
@@ -70,11 +71,11 @@ function Home() {
       <section className="dark:bg-light">
         {sections.showHome && (
           <>
-            <section className="mainContainer mt-20 dark:bg-light">
+            <section className="container flex items-center m-auto p-4 bg-white min-h-96 mt-20 w-full dark:bg-light">
               <Main />
             </section>
 
-            <section id="about-me" className="about-me">
+            <section id="about-me" className="max-w-5xl w-full m-auto p-2 pb-8">
               <div className="generalContainer">
                 <section className="personal-info">
                   <div className="mb-6">
@@ -93,61 +94,10 @@ function Home() {
                     </p>
                   </div>
 
-                  <div className="about-me-skills">
-                    <div className="about-me-skills__skill dark:bg-white">
-                      <p className="about-me-skills__title">
-                        <span>JavaScript</span>:
-                      </p>
-                      He <strong>trabajado</strong> con JavaScript,
-                      abarcando temas como el asincronismo, manipulación del
-                      DOM y el uso de Promesas. Estos conocimientos me han
-                      permitido crear aplicaciones interactivas y dinámicas que
-                      ofrecen una experiencia fluida a los usuarios.
-                    </div>
-
-                    <div className="about-me-skills__skill dark:bg-white">
-                      <p className="about-me-skills__title">
-                        <span>Python</span>:
-                      </p>
-                      Cuento con <span>experiencia</span> en Python, dominando
-                      conceptos como el entorno virtual, list comprehensions,
-                      high order functions y módulos. Esto me ha permitido
-                      abordar proyectos desde diferentes perspectivas y
-                      ofrecer soluciones eficientes.
-                    </div>
-                    <div className="about-me-skills__skill dark:bg-white">
-                      <p className="about-me-skills__title">
-                        <span>React</span>:
-                      </p>
-                      Soy competente en el desarrollo con React, haciendo uso
-                      de conceptos como useContext, useState, useEffect, hooks
-                      y props. Esto me ha permitido crear aplicaciones web
-                      modernas y escalables, brindando a los usuarios una
-                      experiencia única e interactiva.
-                    </div>
-                    <div className="about-me-skills__skill dark:bg-white">
-                      <p className="about-me-skills__title">
-                        <span>Node.js</span>:
-                      </p>
-                      Amplío mis habilidades en el desarrollo web con Node.js,
-                      lo que me permite trabajar en proyectos más completos y
-                      escalables. Tengo conocimientos en la creación de módulos
-                      con la extensión .mjs, la lectura de archivos utilizando
-                      Promesas y/o async/await, y el uso de los módulos path,
-                      http, net y process para una gestión eficiente de rutas
-                      y procesos.
-                    </div>
-                    <div className="about-me-skills__skill dark:bg-white">
-                      <p className="about-me-skills__title">
-                        <span>Express</span>:
-                      </p>
-                      También tengo <strong>conocimientos</strong> con Express,
-                      un popular framework de aplicaciones web para Node.js.
-                      Conozco su potencial para manejar diferentes métodos HTTP
-                      (GET, POST, PUT, DELETE, etc.), lo que me permite
-                      construir APIs robustas y aplicaciones web eficientes.
-                    </div>
+                  <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-5">
+                    <Technologies />
                   </div>
+
                 </section>
                 <WorkExperience />
                 <Education />
@@ -159,14 +109,14 @@ function Home() {
         )}
 
         {sections.showProjects && (
-          <section id="all-projects" className="section-all-projects dark:bg-light">
+          <section id="all-projects" className="dark:bg-light">
             <Projects />
           </section>
         )}
 
         {sections.showProjectInsta && (
           <>
-            <section className="section-InstagramProject mt-20">
+            <section className="max-w-5xl w-full m-auto mt-20" style={{minHeight: "800px"}}>
               <InstagramProject />
             </section>
           </>
@@ -174,13 +124,13 @@ function Home() {
 
         {sections.showFeaturedProjects && (
           <>
-            <section id="featured-projects" className="section-TopProjects mt-20">
+            <section id="featured-projects" className="max-w-5xl w-full m-auto mt-20" style={{minHeight: "800px"}}>
               <TopProjects />
             </section>
           </>
         )}
       </section>
-    </div >
+    </div>
   );
 }
 
