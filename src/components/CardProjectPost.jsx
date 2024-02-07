@@ -37,7 +37,7 @@ function CardProjectPost({ project }) {
           </div>
           <div className="projectContainer-links">
             <Link
-              className="projectContainer-links__link effectBtn"
+              className="projectContainer-links__link dark:bg-white dark:text-black dark:hover:bg-light"
               to={ link }
               target="_blank"
             >
@@ -45,7 +45,7 @@ function CardProjectPost({ project }) {
             </Link>
 
             <Link
-              className="projectContainer-links__link effectBtn"
+              className="projectContainer-links__link dark:bg-white dark:text-black dark:hover:bg-light"
               to={ codigo }
               target="_blank"
             >

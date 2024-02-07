@@ -9,6 +9,15 @@ export function DropdownMenu() {
     { href: '/proyectos', label: 'Proyectos' },
   ]
 
+  const SOCIALNETWORKS = [
+    {
+      href: 'https://www.linkedin.com/in/daniel-vasquez-nepomuceno/', label: 'LinkedIn'
+    },
+    {
+      href: 'https://github.com/Daniel-Vasquez', label: 'GitHub'
+    },
+  ]
+
   return (
     <div>
       <Menu as="div" className="relative inline-block text-left">
@@ -35,6 +44,18 @@ export function DropdownMenu() {
                   >
                     {label}
                   </Link>
+                </Menu.Item>
+              ))}
+              {SOCIALNETWORKS.map(({ href, label }, index) => (
+                <Menu.Item key={index}>
+                  <a
+                    href={href}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="bg-blue-medium text-white rounded-md px-3 py-2 font-bold hover:bg-golden hover:text-gray-700 dark:text-black dark:hover:text-white"
+                  >
+                    {label}
+                  </a>
                 </Menu.Item>
               ))}
             </div>
