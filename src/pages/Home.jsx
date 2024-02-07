@@ -79,7 +79,7 @@ function Home() {
               <div>
                 <section className="personal-info">
                   <div className="mb-6">
-                    <p className="text-white text-3xl text-center font-semibold mb-5 sm:text-start dark:text-black">Acerca de mi:</p>
+                    <p className="text-gray-400 text-3xl text-center font-semibold mb-5 sm:text-start dark:text-black">Acerca de mi:</p>
                     <p className="leading-relaxed text-white mb-2 dark:text-black">
                       Soy un programador web con más de un año de experiencia
                       en el emocionante mundo del desarrollo web. A lo largo de
