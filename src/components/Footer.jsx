@@ -8,7 +8,7 @@ import "./styles/Footer.css";
 
 const Footer = () => {
   return (
-    <div className="py-10 bg-gray-700 dark:bg-white">
+    <div className="py-10 bg-gray-700 border-t-2 dark:border-t-2 dark:border-black dark:bg-white">
       <div className="flex flex-col justify-evenly items-center w-full">
         <div>
           <ul className="wrapper flex flex-wrap justify-center list-none">

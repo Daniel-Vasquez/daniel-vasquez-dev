@@ -4,38 +4,31 @@ import certificates from "../certificates";
 
 const Certificates = () => {
   return (
-    <section className="certificates mx-3">
+    <section className="certificates my-9">
       <div>
-        <p className="text-black text-3xl text-center font-semibold mb-5 sm:text-start">
+        <p className="text-white text-3xl text-center font-semibold mb-5 sm:text-start dark:text-black">
           Certificaciones
         </p>
       </div>
       <div
-        className="flex flex-col gap-5 max-h-80 rounded-xl p-5 border-2 dark:border-black"
+        className="bg-blue-light flex flex-col gap-4 max-h-80 rounded-xl p-5 border-2 border-black dark:bg-white"
         style={{
           overflowY: "scroll",
           scrollbarColor: "#2463eb transparent",
         }}
       >
-        {certificates.map((certificate, index) => {
+        {certificates.map(({ img, title }, index) => {
           return (
-            <div className="flex flex-col items-center gap-3 sm:flex-row" key={index}>
+            <div className="flex flex-col items-center gap-5 font-semibold text-white sm:flex-row dark:text-black" key={index}>
               <div className="listCertificates-img">
                 <img
                   className="w-9"
-                  src={certificate.img}
-                  alt={certificate.title}
+                  src={img}
+                  alt={title}
                 />
               </div>
               <div>
-                <Link
-                  className="font-semibold text-blue-600 hover:underline"
-                  to={certificate.link}
-                  target="_blank"
-                  title="Ver certificado"
-                >
-                  {certificate.title}
-                </Link>
+                {title}
               </div>
             </div>
           );

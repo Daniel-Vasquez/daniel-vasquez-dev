@@ -3,7 +3,7 @@ import Projects from "../components/Projects";
 
 export const PageProjects = () => {
   return (
-    <div className='dark:bg-light'>
+    <div className="bg-blue pt-20 dark:bg-white">
       <Projects />
     </div>
   )

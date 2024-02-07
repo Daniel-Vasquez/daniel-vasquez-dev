@@ -9,10 +9,10 @@ const CarouselImages = lazy(() => import("./CarouselImages"));
 function CardProjectPost({ project }) {
   const { title, description, technologies, link, codigo, images } = project
   return (
-    <section className="projectContainer dark:bg-white">
-      <div className="projectContainer-blogs">
+    <section>
+      <div className="max-w-5xl m-auto px-3">
         <Link
-          className="projectContainer-blogs__title"
+          className="inline-block text-white text-2xl font-black underline mb-3 pb-2 hover:text-blue-600 dark:text-black dark:hover:text-blue-600"
           to={ link }
           target="_black"
           title="Visitar"
@@ -20,19 +20,19 @@ function CardProjectPost({ project }) {
           {title}
         </Link>
 
-        <div className="projectContainer-coverPage">
+        <div className="text-center">
           <Suspense fallback={<Loading />}>
             <CarouselImages images={images} />
           </Suspense>
         </div>
 
         <div className="projectContainer-info">
-          <h2 className="projectContainer-info__title font-bold">{title}</h2>
-          <div className="projectContainer-info__paragraph">
-            <div className="projectContainer-info__description">
+          <h2 className="text-3xl font-bold text-white dark:text-black sm:text-5xl">{title}</h2>
+          <div className="mb-3">
+            <div className="py-4 text-white leading-7 dark:text-black">
               {description}
             </div>
-            <h3 className="projectContainer-info__span text-3xl font-semibold">Tecnologias:</h3>
+            <h3 className="text-gray-500 text-3xl font-semibold dark:text-black">Tecnologias:</h3>
             <Icons technologies={technologies} />
           </div>
           <div className="projectContainer-links">

@@ -48,7 +48,6 @@
   backdrop-filter: blur(4px);
   border-radius: 20px;
   transition: all 0.4s;
-  background-color: transparent;
   -webkit-animation-name: main-container__description;
   animation-name: main-container__description;
   -webkit-animation-duration: 2s;
@@ -65,7 +64,6 @@
 	position: relative; 
 	float: left;
 	background-color: transparent;
-	color: black;
   margin: 0;
 }
 
@@ -73,7 +71,6 @@
   position:absolute;
   right:0;
   width:0;
-  background-color: white;
   border-left: 1px solid #000;
   animation: typewriteranimation 4s steps(545) infinite alternate;
 }
@@ -104,7 +101,6 @@
 .main-container__mail,
 .projectDestacado-link {
   text-decoration: none;
-  color: black;
 }
 
 .mainContainer-whats__img,
@@ -122,15 +118,6 @@
 .mainContainer-git__link:hover,
 .main-container__mail:hover {
   text-decoration: revert;
-}
-
-.projectsContainer-title {
-  font-size: 40px;
-  font-weight: 500;
-  color: black;
-  margin: 25px 0;
-  text-align: center;
-  text-decoration: underline;
 }
 
 .outstandingProjectsContainer {
@@ -233,17 +220,6 @@
 
 .projectDestacado-link:hover .projectDestacado-link__img {
   transform: rotate(360deg);
-}
-
-.main-container__paragraphs {
-  margin: 10px 0;
-  line-height: 1.4;
-  color: black;
-}
-
-.main-container__paragraphs span {
-  color: #c3285d;
-  font-weight: 900;
 }
 
 .projectContainer-info__paragraph ol {
