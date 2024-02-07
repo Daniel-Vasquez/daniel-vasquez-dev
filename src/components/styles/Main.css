@@ -105,8 +105,7 @@
 
 .mainContainer-whats__img,
 .mainContainer-git__img {
-  width: 20px;
-  filter: invert(0)
+  width: 25px;
 }
 
 .projectsContainer {

@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import logoGithub from "../images/logo-github.png";
 import logoWhats from "../images/logo-whatsapp.png";
 import logoEmail from "../images/logo-correo.png";
-import logoPdf from "../images/file.png";
+import logoPdf from "../images/download-pdf.png";
 import personalImage from "../images/daniel-black.png";
 import './styles/Main.css'
 
@@ -46,7 +46,7 @@ const Main = () => {
           en la nube de AWS, como: <span className=" font-semibold text-pink-700">S3 y Cloudwatch</span>. Además,
           he trabajado con los hooks de <span className=" font-semibold text-pink-700">React</span>, tales como: useState, useEffect
           y useContext. 
-          Tengo expreriencia trabajando con <span className=" font-semibold text-pink-700">Astro, tailwind, redux y redux toolkit</span>.{" "}
+          Tengo expreriencia trabajando con <span className="font-semibold text-pink-700">Astro, tailwind, redux y redux toolkit</span>.{" "}
           Soy apasionado por el diseño web y 
           siempre estoy en busca de nuevas oportunidades para aprender y
           mejorar mis habilidades como desarrollador.
@@ -60,21 +60,21 @@ const Main = () => {
         />
         <div className="containerLinks">
           <LinkWithImage
-            linkClassName="mainContainer-whats__link text-white dark:text-black"
+            linkClassName="mainContainer-whats__link underline text-white hover:text-gray-400 dark:text-black dark:hover:text-gray-400"
             url="https://api.whatsapp.com/send?phone=525531483433"
             text="whatsApp"
             imgClassName="mainContainer-whats__img"
             img={logoWhats}
           />
           <LinkWithImage
-            linkClassName="mainContainer-git__link text-white dark:text-black"
+            linkClassName="mainContainer-git__link underline text-white hover:text-gray-400 dark:text-black dark:hover:text-gray-400"
             url="https://github.com/Daniel-Vasquez"
             text="Github"
             imgClassName="mainContainer-git__img"
             img={logoGithub}
           />
           <a
-            className="mainContainer-git__link text-white dark:text-black"
+            className="mainContainer-git__link underline text-white hover:text-gray-400 dark:text-black dark:hover:text-gray-400"
             href='./CV-Daniel-Vasquez.pdf'
             download
           >
