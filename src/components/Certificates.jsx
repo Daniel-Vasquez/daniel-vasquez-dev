@@ -11,43 +11,43 @@ import { LogoGit } from "../icons/LogoGit";
 
 const LOGOSSVG = [
   {
-    name: 'astro',
+    name: "astro",
     img: <LogoAstro className="w-11 h-11 text-orange-500" />,
   },
   {
-    name: 'tailwind',
+    name: "tailwind",
     img: <LogoTailwind className="w-11 h-11 text-cyan-300" />,
   },
   {
-    name: 'react',
+    name: "react",
     img: <LogoReact className="w-11 h-11 text-blue-500" />,
   },
   {
-    name: 'nodejs',
+    name: "nodejs",
     img: <LogoNodejs className="w-11 h-11 text-green-500" />,
   },
   {
-    name: 'expressjs',
+    name: "expressjs",
     img: <LogoNodejs className="w-11 h-11 text-green-500" />,
   },
   {
-    name: 'aws',
+    name: "aws",
     img: <LogoAws className="w-11 h-11 text-orange-400" />,
   },
   {
-    name: 'javascript',
+    name: "javascript",
     img: <LogoJavascript className="w-11 h-11 text-yellow-400" />,
   },
   {
-    name: 'css grid',
+    name: "css grid",
     img: <LogoCssgrid className="w-11 h-11 text-black" />,
   },
   {
-    name: 'dom',
+    name: "dom",
     img: <LogoDom className="w-11 h-11 text-purple-600" />,
   },
   {
-    name: 'git',
+    name: "git",
     img: <LogoGit className="w-11 h-11 text-red-500" />,
   },
 ]
