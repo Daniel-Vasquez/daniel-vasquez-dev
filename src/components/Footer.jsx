@@ -17,7 +17,7 @@ const Footer = () => {
               target="_black"
             >
               <span className="tooltip">GitHub</span>
-              <LogoGithub className="w-9 h-9 text-white dark:text-black" />
+              <LogoGithub className="w-9 h-9 text-purple-600" />
             </Link>
 
             <Link
@@ -26,7 +26,7 @@ const Footer = () => {
               target="_black"
             >
               <span className="tooltip">WhatsApp</span>
-              <LogoWhatsapp className="w-9 h-9 text-white dark:text-black" />
+              <LogoWhatsapp className="w-9 h-9 text-green-500" />
             </Link>
 
             <Link
@@ -35,7 +35,7 @@ const Footer = () => {
               target="_black"
             >
               <span className="tooltip">Correo</span>
-              <LogoEmail className="w-9 h-9 text-white dark:text-black" />
+              <LogoEmail className="w-9 h-9 text-red-500" />
             </Link>
 
             <Link
@@ -44,7 +44,7 @@ const Footer = () => {
               target="_black"
             >
               <span className="tooltip">Linkedin</span>
-              <LogoLinkedin className="w-9 h-9 text-white dark:text-black" />
+              <LogoLinkedin className="w-9 h-9 text-blue-400" />
             </Link>
 
           </ul>

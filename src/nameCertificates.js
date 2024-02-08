@@ -4,12 +4,12 @@ export const NAMECERTIFICATES = [
     title: "Introducción a Astro",
   },
   {
-    tag: "tailwind",
-    title: "Tailwind CSS",
-  },
-  {
     tag: "react",
     title: "React",
+  },
+  {
+    tag: "tailwind css",
+    title: "Tailwind CSS",
   },
   {
     tag: "nodejs",

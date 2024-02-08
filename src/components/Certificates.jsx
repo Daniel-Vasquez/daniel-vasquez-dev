@@ -7,43 +7,48 @@ import { LogoJavascript } from "../icons/LogoJavascript";
 import { LogoCssgrid } from "../icons/LogoCssgrid";
 import { LogoDom } from "../icons/LogoDom";
 import { LogoGit } from "../icons/LogoGit";
+import { LogoTailwind } from "../icons/LogoTailwind";
 
 const LOGOSSVG = [
   {
     name: "astro",
-    img: <LogoAstro className="w-11 h-11 text-orange-500" />,
+    svg: <LogoAstro className="w-11 h-11 text-orange-500" />,
   },
   {
     name: "react",
-    img: <LogoReact className="w-11 h-11 text-blue-500" />,
+    svg: <LogoReact className="w-11 h-11 text-blue-500" />,
+  },
+  {
+    name: "tailwind css",
+    svg: <LogoTailwind className="w-11 h-11 text-cyan-300" />,
   },
   {
     name: "nodejs",
-    img: <LogoNodejs className="w-11 h-11 text-green-500" />,
+    svg: <LogoNodejs className="w-11 h-11 text-green-500" />,
   },
   {
     name: "expressjs",
-    img: <LogoNodejs className="w-11 h-11 text-green-500" />,
+    svg: <LogoNodejs className="w-11 h-11 text-green-500" />,
   },
   {
     name: "aws",
-    img: <LogoAws className="w-11 h-11 text-orange-400" />,
+    svg: <LogoAws className="w-11 h-11 text-orange-400" />,
   },
   {
     name: "javascript",
-    img: <LogoJavascript className="w-11 h-11 text-yellow-400" />,
+    svg: <LogoJavascript className="w-11 h-11 text-yellow-400" />,
   },
   {
     name: "css grid",
-    img: <LogoCssgrid className="w-11 h-11 text-black" />,
+    svg: <LogoCssgrid className="w-11 h-11 text-black" />,
   },
   {
     name: "dom",
-    img: <LogoDom className="w-11 h-11 text-purple-600" />,
+    svg: <LogoDom className="w-11 h-11 text-purple-600" />,
   },
   {
     name: "git",
-    img: <LogoGit className="w-11 h-11 text-red-500" />,
+    svg: <LogoGit className="w-11 h-11 text-red-500" />,
   },
 ]
 
@@ -66,7 +71,7 @@ const Certificates = () => {
           return (
             <div className="flex flex-col items-center text-center gap-5 font-semibold text-white sm:flex-row dark:text-black" key={index}>
               <div className="listCertificates-img">
-                {LOGOSSVG.find((logo) => logo.name === tag)?.img || tag}
+                {LOGOSSVG.find((logo) => logo.name === tag)?.svg || tag}
               </div>
               <div>
                 {title}

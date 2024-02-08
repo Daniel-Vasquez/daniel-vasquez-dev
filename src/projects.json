@@ -27,28 +27,23 @@
       "technologies": [
         {
           "name": "Astro",
-          "src": "../astro.png",
-          "url": "https://astro.build/"
+          "src": "../astro.png"
         },
         {
           "name": "React",
-          "src": "../react-icono.png",
-          "url": "https://react.dev/"
+          "src": "../react-icono.png"
         },
         {
           "name": "HTML",
-          "src": "../html-5-icono.png",
-          "url": "https://developer.mozilla.org/en-US/docs/Web/HTML"
+          "src": "../html-5-icono.png"
         },
         {
           "name": "Tailwind",
-          "src": "../tailwind.png",
-          "url": "https://v2.tailwindcss.com/docs"
+          "src": "../tailwind.png"
         },
         {
           "name": "Typescript",
-          "src": "../logo-typescript.png",
-          "url": "https://www.typescriptlang.org/docs/handbook/typescript-in-5-minutes.html"
+          "src": "../logo-typescript.png"
         }
       ]
     },
@@ -79,28 +74,19 @@
       "technologies": [
         {
           "name": "React",
-          "src": "../react-icono.png",
-          "url": "https://react.keepdesign.io/"
+          "src": "../react-icono.png"
         },
         {
           "name": "NodeJS",
-          "src": "../nodejs-icono.png",
-          "url": "https://astro.build/"
+          "src": "../nodejs-icono.png"
         },
         {
           "name": "Expressjs",
-          "src": "../expressjs.png",
-          "url": "https://expressjs.com/"
+          "src": "../expressjs.png"
         },
         {
           "name": "Tailwind",
-          "src": "../tailwind.png",
-          "url": "https://v2.tailwindcss.com/docs"
-        },
-        {
-          "name": "CORS",
-          "src": "../cors.png",
-          "url": "https://expressjs.com/en/resources/middleware/cors.html"
+          "src": "../tailwind.png"
         }
       ]
     },
@@ -131,13 +117,11 @@
       "technologies": [
         {
           "name": "React",
-          "src": "../react-icono.png",
-          "url": "https://react.dev/"
+          "src": "../react-icono.png"
         },
         {
           "name": "CSS",
-          "src": "../css-3-icono.png",
-          "url": "https://developer.mozilla.org/en-US/docs/Web/CSS"
+          "src": "../css-3-icono.png"
         }
       ]
     },
@@ -168,13 +152,11 @@
       "technologies": [
         {
           "name": "React",
-          "src": "../react-icono.png",
-          "url": "https://react.dev/"
+          "src": "../react-icono.png"
         },
         {
           "name": "CSS",
-          "src": "../css-3-icono.png",
-          "url": "https://developer.mozilla.org/en-US/docs/Web/CSS"
+          "src": "../css-3-icono.png"
         }
       ]
     },
@@ -205,13 +187,11 @@
       "technologies": [
         {
           "name": "React",
-          "src": "../react-icono.png",
-          "url": "https://react.dev/"
+          "src": "../react-icono.png"
         },
         {
           "name": "CSS",
-          "src": "../css-3-icono.png",
-          "url": "https://developer.mozilla.org/en-US/docs/Web/CSS"
+          "src": "../css-3-icono.png"
         }
       ]
     },
@@ -242,13 +222,11 @@
       "technologies": [
         {
           "name": "React",
-          "src": "../react-icono.png",
-          "url": "https://react.dev/"
+          "src": "../react-icono.png"
         },
         {
           "name": "CSS",
-          "src": "../css-3-icono.png",
-          "url": "https://developer.mozilla.org/en-US/docs/Web/CSS"
+          "src": "../css-3-icono.png"
         }
       ]
     },
@@ -279,13 +257,11 @@
       "technologies": [
         {
           "name": "React",
-          "src": "../react-icono.png",
-          "url": "https://react.dev/"
+          "src": "../react-icono.png"
         },
         {
           "name": "CSS",
-          "src": "../css-3-icono.png",
-          "url": "https://developer.mozilla.org/en-US/docs/Web/CSS"
+          "src": "../css-3-icono.png"
         }
       ]
     },
@@ -316,13 +292,11 @@
       "technologies": [
         {
           "name": "React",
-          "src": "../react-icono.png",
-          "url": "https://react.dev/"
+          "src": "../react-icono.png"
         },
         {
           "name": "CSS",
-          "src": "../css-3-icono.png",
-          "url": "https://developer.mozilla.org/en-US/docs/Web/CSS"
+          "src": "../css-3-icono.png"
         }
       ]
     },
@@ -353,18 +327,15 @@
       "technologies": [
         {
           "name": "javaScript",
-          "src": "../java-script-icono.png",
-          "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+          "src": "../java-script-icono.png"
         },
         {
           "name": "HTML",
-          "src": "../html-5-icono.png",
-          "url": "https://developer.mozilla.org/en-US/docs/Web/HTML"
+          "src": "../html-5-icono.png"
         },
         {
           "name": "CSS",
-          "src": "../css-3-icono.png",
-          "url": "https://developer.mozilla.org/en-US/docs/Web/CSS"
+          "src": "../css-3-icono.png"
         }
       ]
     },
@@ -395,13 +366,11 @@
       "technologies": [
         {
           "name": "React",
-          "src": "../react-icono.png",
-          "url": "https://react.dev/"
+          "src": "../react-icono.png"
         },
         {
           "name": "CSS",
-          "src": "../css-3-icono.png",
-          "url": "https://developer.mozilla.org/en-US/docs/Web/CSS"
+          "src": "../css-3-icono.png"
         }
       ]
     },
@@ -432,13 +401,11 @@
       "technologies": [
         {
           "name": "React",
-          "src": "../react-icono.png",
-          "url": "https://react.dev/"
+          "src": "../react-icono.png"
         },
         {
           "name": "CSS",
-          "src": "../css-3-icono.png",
-          "url": "https://developer.mozilla.org/en-US/docs/Web/CSS"
+          "src": "../css-3-icono.png"
         }
       ]
     }
