@@ -48,7 +48,7 @@ const LOGOSSVG = [
 
 export const Icons = ({ technologies }) => {
   return (
-    <ul className="flex gap-9 mt-4 mb-7 flex-wrap">
+    <ul className="flex gap-8 mt-4 mb-7 flex-wrap">
       {technologies.map(({ name }) => {
         return (
           <li key={name} title={name} className="wrapper flex flex-col justify-center cursor-pointer">
