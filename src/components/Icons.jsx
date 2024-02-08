@@ -5,6 +5,7 @@ import { LogoJavascript } from "../icons/LogoJavascript";
 import { LogoHtml } from "../icons/LogoHtml";
 import { LogoTypescript } from "../icons/LogoTypescript";
 import { LogoCss } from "../icons/LogoCss";
+import { LogoTailwind } from "../icons/LogoTailwind";
 
 const LOGOSSVG = [
   {
@@ -14,6 +15,10 @@ const LOGOSSVG = [
   {
     name: "react",
     svg: <LogoReact className="w-11 h-11 text-blue-500" />,
+  },
+  {
+    name: "tailwind",
+    svg: <LogoTailwind className="w-11 h-11 text-cyan-300" />,
   },
   {
     name: "nodejs",
@@ -46,7 +51,7 @@ export const Icons = ({ technologies }) => {
     <ul className="flex gap-8 mt-4 mb-7 flex-wrap">
       {technologies.map(({ name }) => {
         return (
-          <li key={name} title={name} className="wrapper flex flex-col justify-center cursor-pointer">
+          <li key={name} title={name} className="wrapper flex flex-col justify-center gap-1 cursor-pointer">
             <div className="flex justify-center">
               {LOGOSSVG.find((logo) => logo.name.toLocaleLowerCase() === name.toLocaleLowerCase())?.svg || name}
             </div>
