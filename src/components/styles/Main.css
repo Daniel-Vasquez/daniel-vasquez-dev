@@ -96,16 +96,10 @@
   gap: 10px;
 }
 
-.mainContainer-whats__link,
-.mainContainer-git__link,
+
 .main-container__mail,
 .projectDestacado-link {
   text-decoration: none;
-}
-
-.mainContainer-whats__img,
-.mainContainer-git__img {
-  width: 25px;
 }
 
 .projectsContainer {
@@ -113,8 +107,6 @@
   padding-bottom: 30px;
 }
 
-.mainContainer-whats__link:hover,
-.mainContainer-git__link:hover,
 .main-container__mail:hover {
   text-decoration: revert;
 }
@@ -227,15 +219,11 @@
 
 .main-container__mail {
   display: flex;
-  color: black;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
   font-weight: 900;
   margin: 5px auto;
-}
-
-.main-mail__logo {
-  width: 25px;
-  margin-left: 10px;
-  filter: invert(0)
 }
 
 @keyframes typewriteranimation {

@@ -1,14 +1,14 @@
-import FooterLogos from "./FooterLogos";
+import { Logos } from "./Logos";
 import "./styles/Icons.css";
 
-const Icons = ({ technologies }) => {
+export const Icons = ({ technologies }) => {
   return (
     <div className="icons">
       {technologies.map(({ name, src, url }) => {
         return (
           <div key={name}>
             <ul className="wrapper">
-              <FooterLogos
+              <Logos
                 socialClassName={name.toLowerCase()}
                 url={url}
                 logo={src}
@@ -21,5 +21,3 @@ const Icons = ({ technologies }) => {
     </div>
   );
 };
-
-export default Icons;
