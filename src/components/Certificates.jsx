@@ -1,7 +1,6 @@
 import { NAMECERTIFICATES } from "../nameCertificates";
 import { LogoReact } from "../icons/LogoReact";
 import { LogoAstro } from "../icons/LogoAstro";
-import { LogoTailwind } from "../icons/LogoTailwind";
 import { LogoNodejs } from "../icons/LogoNodejs";
 import { LogoAws } from "../icons/LogoAws";
 import { LogoJavascript } from "../icons/LogoJavascript";
@@ -13,10 +12,6 @@ const LOGOSSVG = [
   {
     name: "astro",
     img: <LogoAstro className="w-11 h-11 text-orange-500" />,
-  },
-  {
-    name: "tailwind",
-    img: <LogoTailwind className="w-11 h-11 text-cyan-300" />,
   },
   {
     name: "react",
