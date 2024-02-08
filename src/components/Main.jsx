@@ -49,42 +49,42 @@ const Main = () => {
         >
           ¿Trabajamos juntos?
           <div>
-            <LogoEmail className="w-6 h-6 text-white dark:text-black" />
+            <LogoEmail className="w-6 h-6 text-red-500" />
           </div>
         </Link>
 
 
-        <div className="containerLinks">
+        <div className="flex justify-evenly gap-2 flex-wrap">
           <Link
-            className="mainContainer-git__link underline text-white hover:text-gray-400 dark:text-black dark:hover:text-gray-400"
+            className="mainContainer-git__link underline text-green-500 hover:text-white dark:hover:text-black"
             to="https://api.whatsapp.com/send?phone=525531483433"
             target="_black"
             title="WhatsApp"
           >
             WhatsApp
             <div>
-              <LogoWhatsapp className="w-7 h-7 text-white dark:text-black" />
+              <LogoWhatsapp className="w-7 h-7 text-green-500" />
             </div>
           </Link>
 
           <Link
-            className="mainContainer-git__link underline text-white hover:text-gray-400 dark:text-black dark:hover:text-gray-400"
+            className="mainContainer-git__link underline text-purple-600 hover:text-white dark:hover:text-black"
             to="https://github.com/Daniel-Vasquez"
             target="_black"
             title="Github"
           >
             Github
             <div>
-              <LogoGithub className="w-7 h-7 text-white dark:text-black" />
+              <LogoGithub className="w-7 h-7 text-purple-600" />
             </div>
           </Link>
           <a
-            className="mainContainer-git__link underline text-white hover:text-gray-400 dark:text-black dark:hover:text-gray-400"
+            className="mainContainer-git__link underline text-blue-400 hover:text-white dark:hover:text-black"
             href='./CV-Daniel-Vasquez.pdf'
             download
           >
             CV
-            <LogoDownload className="w-7 h-7 text-white dark:text-black" />
+            <LogoDownload className="w-7 h-7 text-blue-400" />
           </a>
         </div>
       </div>
