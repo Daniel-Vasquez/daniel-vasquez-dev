@@ -1,7 +1,7 @@
 import { Suspense, lazy } from "react";
 import { Link } from "react-router-dom";
 import { Loading } from "./Loading";
-import Icons from "./Icons";
+import { Icons } from "./Icons";
 import "./styles/CardProjectPost.css";
 
 const CarouselImages = lazy(() => import("./CarouselImages"));

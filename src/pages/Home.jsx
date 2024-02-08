@@ -7,13 +7,9 @@ import Skills from "../components/Skills";
 import Certificates from "../components/Certificates";
 import Projects from "../components/Projects";
 import InstagramProject from "../components/InstagramProject";
-import meIcon from "../images/me-icon.png"
-import projectsIcon from "../images/projects-icon.png"
-import instaIcon from "../images/insta-icon.png"
-import featuredIcon from "../images/featured-icon.png"
-import { BtnShowSections } from "../components/BtnShowSections";
 import { TopProjects } from "../components/TopProjects";
 import { Technologies } from "../components/Technologies";
+import { OptionsButtons } from "../components/OptionsButtons";
 import '../components/styles/Home.css'
 
 function Home() {
@@ -40,38 +36,13 @@ function Home() {
   return (
     <div className="home pt-4 bg-blue-medium">
       <section className="hidden pl-2 pr-4 bg-black md:block dark:bg-white">
-        <div className="flex flex-col gap-4 sticky top-1/4">
-          <BtnShowSections
-            title='Acerca de mi'
-            icon={meIcon}
-            nameSection="showHome"
-            handleSectionClick={handleSectionClick}
-          />
-          <BtnShowSections
-            title='Proyectos'
-            icon={projectsIcon}
-            nameSection="showProjects"
-            handleSectionClick={handleSectionClick}
-          />
-          <BtnShowSections
-            title='Replica de Instagram'
-            icon={instaIcon}
-            nameSection="showProjectInsta"
-            handleSectionClick={handleSectionClick}
-          />
-          <BtnShowSections
-            title='Proyectos destacados'
-            icon={featuredIcon}
-            nameSection="showFeaturedProjects"
-            handleSectionClick={handleSectionClick}
-          />
-        </div>
+        <OptionsButtons handleSectionClick={handleSectionClick} />
       </section>
 
-      <section className="dark:bg-light">
+      <section className="px-4 dark:bg-light">
         {sections.showHome && (
           <>
-            <section className="container bg-blue-medium flex items-center m-auto p-4 min-h-96 pt-20 w-full dark:bg-light">
+            <section className="container bg-blue-medium flex items-center m-auto min-h-96 pt-20 w-full dark:bg-light">
               <Main />
             </section>
 
@@ -109,14 +80,14 @@ function Home() {
         )}
 
         {sections.showProjects && (
-          <section id="all-projects" className="pt-20 bg-blue dark:bg-light">
+          <section id="all-projects" className="pt-20 dark:bg-light">
             <Projects />
           </section>
         )}
 
         {sections.showProjectInsta && (
           <>
-            <section className="max-w-5xl w-full m-auto pt-20" style={{minHeight: "800px"}}>
+            <section className="max-w-5xl w-full m-auto pt-20" style={{ minHeight: "800px" }}>
               <InstagramProject />
             </section>
           </>
@@ -124,7 +95,7 @@ function Home() {
 
         {sections.showFeaturedProjects && (
           <>
-            <section id="featured-projects" className="max-w-5xl w-full m-auto pt-20" style={{minHeight: "800px"}}>
+            <section id="featured-projects" className="max-w-5xl w-full m-auto pt-20" style={{ minHeight: "800px" }}>
               <TopProjects />
             </section>
           </>
