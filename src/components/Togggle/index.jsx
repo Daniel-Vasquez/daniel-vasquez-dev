@@ -1,9 +1,12 @@
-import React from 'react'
+import { LogoDark } from "../../icons/LogoDark"
+import { LogoLight } from "../../icons/LogoLight"
 
 export const Toggle = ({ handleDarkMode }) => {
   return (
     <div className='flex items-center gap-3 justify-center'>
-      <span className="text-md font-semibold text-white dark:text-black">Dark</span>
+      <span className="text-md font-semibold text-white dark:text-black">
+        <LogoDark className="w-7 h-7 text-gray-500" />
+      </span>
       <label
         htmlFor="toggleSix"
         className="bg-white rounded-2xl flex items-center cursor-pointer select-none text-dark dark:bg-black dark:text-white"
@@ -23,7 +26,9 @@ export const Toggle = ({ handleDarkMode }) => {
           ></div>
         </div>
       </label>
-      <span className="text-md font-semibold text-white dark:text-black">Light</span>
+      <span className="text-md font-semibold text-white dark:text-black">
+        <LogoLight className="w-7 h-7 text-yellow-500" />
+      </span>
     </div>
   )
 }

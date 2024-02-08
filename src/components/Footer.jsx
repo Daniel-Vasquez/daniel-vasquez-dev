@@ -1,9 +1,8 @@
-import React from "react";
-import FooterLogos from "./FooterLogos";
-import logoGithub from "../images/logo-github.png";
-import logoWhats from "../images/logo-whatsapp.png";
-import logoEmail from "../images/logo-correo.png";
-import logoLinkedin from "../images/logo-linkedin.png";
+import { Link } from "react-router-dom";
+import { LogoGithub } from "../icons/LogoGithub";
+import { LogoWhatsapp } from "../icons/LogoWhatsapp";
+import { LogoEmail } from "../icons/LogoEmail";
+import { LogoLinkedin } from "../icons/LogoLinkedin";
 import "./styles/Footer.css";
 
 const Footer = () => {
@@ -12,30 +11,42 @@ const Footer = () => {
       <div className="flex flex-col justify-evenly items-center w-full">
         <div>
           <ul className="wrapper flex flex-wrap justify-center list-none">
-            <FooterLogos
-              socialClassName="gitHub"
-              url="https://github.com/Daniel-Vasquez"
-              logo={logoGithub}
-              name="GitHub"
-            />
-            <FooterLogos
-              socialClassName="whatsApp"
-              url="https://api.whatsapp.com/send?phone=525531483433"
-              logo={logoWhats}
-              name="WhatsApp"
-            />
-            <FooterLogos
-              socialClassName="correo"
-              url="mailto:dani.vasquez.dev@gmail.com"
-              logo={logoEmail}
-              name="Correo"
-            />
-            <FooterLogos
-              socialClassName="linkedin"
-              url="https://www.linkedin.com/in/daniel-vasquez-nepomuceno/"
-              logo={logoLinkedin}
-              name="Linkedin"
-            />
+            <Link
+              className="icon gitHub"
+              to="https://github.com/Daniel-Vasquez"
+              target="_black"
+            >
+              <span className="tooltip">GitHub</span>
+              <LogoGithub className="w-9 h-9 text-white dark:text-black" />
+            </Link>
+
+            <Link
+              className="icon whatsApp"
+              to="https://api.whatsapp.com/send?phone=525531483433"
+              target="_black"
+            >
+              <span className="tooltip">WhatsApp</span>
+              <LogoWhatsapp className="w-9 h-9 text-white dark:text-black" />
+            </Link>
+
+            <Link
+              className="icon correo"
+              to="mailto:dani.vasquez.dev@gmail.com"
+              target="_black"
+            >
+              <span className="tooltip">Correo</span>
+              <LogoEmail className="w-9 h-9 text-white dark:text-black" />
+            </Link>
+
+            <Link
+              className="icon linkedin"
+              to="https://www.linkedin.com/in/daniel-vasquez-nepomuceno/"
+              target="_black"
+            >
+              <span className="tooltip">Linkedin</span>
+              <LogoLinkedin className="w-9 h-9 text-white dark:text-black" />
+            </Link>
+
           </ul>
         </div>
         <div className="text-center">

@@ -1,7 +1,6 @@
-import React from "react";
 import { Link } from "react-router-dom";
 
-const FooterLogos = ({ socialClassName, url, logo, name }) => {
+export const Logos = ({ socialClassName, url, logo, name }) => {
   return (
     <Link
       className={`icon ${socialClassName}`}
@@ -13,5 +12,3 @@ const FooterLogos = ({ socialClassName, url, logo, name }) => {
     </Link>
   );
 };
-
-export default FooterLogos;
