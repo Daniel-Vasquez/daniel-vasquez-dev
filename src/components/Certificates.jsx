@@ -7,7 +7,6 @@ import { LogoJavascript } from "../icons/LogoJavascript";
 import { LogoCssgrid } from "../icons/LogoCssgrid";
 import { LogoDom } from "../icons/LogoDom";
 import { LogoGit } from "../icons/LogoGit";
-import { LogoTailwind } from "../icons/LogoTailwind";
 
 const LOGOSSVG = [
   {
@@ -17,10 +16,6 @@ const LOGOSSVG = [
   {
     name: "react",
     svg: <LogoReact className="w-11 h-11 text-blue-500" />,
-  },
-  {
-    name: "tailwind css",
-    svg: <LogoTailwind className="w-11 h-11 text-cyan-300" />,
   },
   {
     name: "nodejs",

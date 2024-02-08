@@ -2,7 +2,6 @@ import { LogoReact } from "../icons/LogoReact";
 import { LogoAstro } from "../icons/LogoAstro";
 import { LogoNodejs } from "../icons/LogoNodejs";
 import { LogoJavascript } from "../icons/LogoJavascript";
-import { LogoTailwind } from "../icons/LogoTailwind";
 import { LogoHtml } from "../icons/LogoHtml";
 import { LogoTypescript } from "../icons/LogoTypescript";
 import { LogoCss } from "../icons/LogoCss";
@@ -15,10 +14,6 @@ const LOGOSSVG = [
   {
     name: "react",
     svg: <LogoReact className="w-11 h-11 text-blue-500" />,
-  },
-  {
-    name: "tailwind",
-    svg: <LogoTailwind className="w-11 h-11 text-cyan-300" />,
   },
   {
     name: "nodejs",
