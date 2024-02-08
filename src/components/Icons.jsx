@@ -2,10 +2,10 @@ import { LogoReact } from "../icons/LogoReact";
 import { LogoAstro } from "../icons/LogoAstro";
 import { LogoNodejs } from "../icons/LogoNodejs";
 import { LogoJavascript } from "../icons/LogoJavascript";
-import { LogoTailwind } from "../icons/LogoTailwind";
 import { LogoHtml } from "../icons/LogoHtml";
 import { LogoTypescript } from "../icons/LogoTypescript";
 import { LogoCss } from "../icons/LogoCss";
+import { LogoTailwind } from "../icons/LogoTailwind";
 
 const LOGOSSVG = [
   {
@@ -48,10 +48,10 @@ const LOGOSSVG = [
 
 export const Icons = ({ technologies }) => {
   return (
-    <ul className="flex gap-9 mt-4 mb-7 flex-wrap">
+    <ul className="flex gap-8 mt-4 mb-7 flex-wrap">
       {technologies.map(({ name }) => {
         return (
-          <li key={name} title={name} className="wrapper flex flex-col justify-center cursor-pointer">
+          <li key={name} title={name} className="wrapper flex flex-col justify-center gap-1 cursor-pointer">
             <div className="flex justify-center">
               {LOGOSSVG.find((logo) => logo.name.toLocaleLowerCase() === name.toLocaleLowerCase())?.svg || name}
             </div>
